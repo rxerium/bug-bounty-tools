@@ -19,6 +19,10 @@ A BASH Script to automate the installation of the most popular bug bounty tools,
 2. Modify the permissions: `chmod +x bug-bounty.sh`
 3. Run the script: `./bug-bounty.sh`
 
+## Additional Setup
+
+In order for Recox to work you must obtain API keys for each, these can be created from [Shodan](https://shodan.io) and [VirusTotal](https://virustotal.com). Note that an account is required to obtain an API key. 
+
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="25" height="25" /> Contributions
 
 While I'm sure there are many other tools that are used for Bug Bounties this is just a baseline set, feel free to create pull requests and contribute 😃
