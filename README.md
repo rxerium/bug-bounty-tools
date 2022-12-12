@@ -15,7 +15,7 @@ A BASH Script to automate the installation of the most popular bug bounty tools,
 
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Triangular%20Flag.png" alt="Triangular Flag" width="25" height="25" /> Setup 
 
-1. Copy or download the file using wget: `wget https://github.com/hakrishi/bug-bounty-tools/blob/main/bug-bounty.sh`
+1. Copy or download the file using wget: `wget https://raw.githubusercontent.com/hakrishi/bug-bounty-tools/main/bug-bounty.sh`
 2. Modify the permissions: `chmod +x bug-bounty.sh`
 3. Run the script: `./bug-bounty.sh`
 
