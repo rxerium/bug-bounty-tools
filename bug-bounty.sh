@@ -12,21 +12,22 @@ echo "Installing GO..."
 sudo apt-get install golang-go -y
 echo "GoLang installed"
 echo "Modifying '.profile' to support GO installations..."
-echo -e "export GOPATH=$(go env GOPATH) \nexport PATH=$PATH:$GOPATH/bin" >> .profile
+echo -e 'export GOPATH=$(go env GOPATH) \nexport PATH=$PATH:$GOPATH/bin' >> .profile
 source ~/.profile
 echo "GO successfully installed"
 
 # Installs the tools mentioned in README.md
 echo "Installing Nuclei..."
-go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+nuclei
 echo "Nuclei installed, installing httpx..."
-go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 echo "httpx installed, installing Subfinder..."
-go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 echo "Subfinder installed, installing DNSx..."
-go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 echo "DNSx installed, installing Naabu..."
-go install github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 echo "Naabu installed, installing Katana"
 go install github.com/projectdiscovery/katana/cmd/katana@latest
 echo "Katana installed, installing Recox"
