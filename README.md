@@ -1,6 +1,6 @@
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Beetle.png" alt="Beetle" width="30" height="30" /> Bug Bounty Script
 
-A BASH Script to automate the installation of the most popular bug bounty tools, the main purpose of this script is to run it on temporary virtual machines in the cloud. 
+A BASH Script to automate the installation of the most popular bug bounty tools, the main purpose of this script is to run it on temporary/disposable virtual machines in the cloud. 
 
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="Hammer and Wrench" width="25" height="25" /> Tools Used
 
@@ -19,11 +19,13 @@ A BASH Script to automate the installation of the most popular bug bounty tools,
 2. Modify the permissions: `chmod +x bug-bounty.sh`
 3. Run the script: `./bug-bounty.sh`
 
-## Additional Setup
+## API Keys
 
-In order for Recox to work you must obtain API keys for each, these can be created from [Shodan](https://shodan.io) and [VirusTotal](https://virustotal.com). Note that an account is required to obtain an API key. 
+2 API keys are required
+- [Shodan](https://shodan.io)
+- [VirusTotal](https://virustotal.com)
 
-Once you have both API keys respectively add them to the `/usr/local/bin/recox/recox.sh` file.
+Once you have both API keys add them to the `/usr/local/bin/recox/recox.sh` file.
 
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="25" height="25" /> Contributions
 
