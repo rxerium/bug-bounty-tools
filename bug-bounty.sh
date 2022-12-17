@@ -7,10 +7,12 @@
 # Updates the system
 sudo apt-get update && sudo apt-get upgrade -y
 
-# Installs GO - required for some of the tools to be installed
-echo "Installing GO..."
-sudo apt-get install golang-go -y
-echo "GoLang installed"
+# Checks to see if GO is installed and installs if not - required for some of the tools to be installed
+if ! command -v go &> /dev/null; then
+  # Install Go
+  sudo apt-get install golang-go -y
+fi
+
 echo "Modifying '.profile' to support GO installations..."
 echo -e 'export GOPATH=$(go env GOPATH) \nexport PATH=$PATH:$GOPATH/bin' >> .profile
 source ~/.profile
@@ -28,9 +30,14 @@ echo "Subfinder installed, installing DNSx..."
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 echo "DNSx installed, installing Naabu..."
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
-echo "Naabu installed, installing Katana"
+echo "Naabu installed, installing Nmap"
+sudo apt-get install nmap
+echo "Nmap installed, installing Katana..."
 go install github.com/projectdiscovery/katana/cmd/katana@latest
-echo "Katana installed, installing Recox"
+echo "Katana installed, installing WPScan..."
+sudo apt install ruby-full
+sudo gem install wpscan
+echo "WPScan installed, installing Recox"
 git clone https://github.com/samhaxr/recox
 cd recox
 chmod +x recox.sh
