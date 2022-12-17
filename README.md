@@ -11,7 +11,6 @@ A BASH Script to automate the installation of the most popular bug bounty tools,
 - [DNSx](https://github.com/projectdiscovery/dnsx)
 - [Nmap](https://nmap.org)
 - [Katana](https://github.com/projectdiscovery/katana)
-- [WPScan](https://wpscan.com/wordpress-security-scanner)
 - [Recox](https://github.com/samhaxr/recox)
 
 
