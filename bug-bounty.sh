@@ -31,13 +31,10 @@ go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 echo "DNSx installed, installing Naabu..."
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 echo "Naabu installed, installing Nmap"
-sudo apt-get install nmap
+sudo apt-get install nmap -y
 echo "Nmap installed, installing Katana..."
 go install github.com/projectdiscovery/katana/cmd/katana@latest
-echo "Katana installed, installing WPScan..."
-sudo apt install ruby-full
-sudo gem install wpscan
-echo "WPScan installed, installing Recox"
+echo "Katana installed, installing Recox..."
 git clone https://github.com/samhaxr/recox
 cd recox
 chmod +x recox.sh
