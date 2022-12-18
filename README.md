@@ -20,7 +20,7 @@ A BASH Script to automate the installation of the most popular bug bounty tools,
 2. Modify the permissions: `chmod +x bug-bounty.sh`
 3. Run the script: `./bug-bounty.sh`
 
-## API Keys
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Key.png" alt="Key" width="25" height="25" /> API Keys
 
 2 API keys are required
 - [Shodan](https://shodan.io)

@@ -39,6 +39,6 @@ git clone https://github.com/samhaxr/recox
 cd recox
 chmod +x recox.sh
 ./recox.sh
-mv recox.sh /usr/local/bin/recox
+sudo mv recox.sh /usr/local/bin/recox
 echo "Recox successfully installed, please add your VirusTotal and Shodan API keys to /usr/lcoal/bin/recox.sh"
 echo "All tools have now been installed."
