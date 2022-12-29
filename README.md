@@ -12,6 +12,9 @@ A BASH Script to automate the installation of the most popular bug bounty tools,
 - [Nmap](https://nmap.org)
 - [Katana](https://github.com/projectdiscovery/katana)
 - [Recox](https://github.com/samhaxr/recox)
+- [Wfuzz](https://github.com/xmendez/wfuzz)
+- [Amass](https://github.com/OWASP/Amass)
+- [SQLMap](https://github.com/sqlmapproject/sqlmap)
 
 
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Triangular%20Flag.png" alt="Triangular Flag" width="25" height="25" /> Setup 

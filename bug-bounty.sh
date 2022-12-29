@@ -18,23 +18,37 @@ echo -e 'export GOPATH=$(go env GOPATH) \nexport PATH=$PATH:$GOPATH/bin' >> .pro
 source ~/.profile
 echo "GO successfully installed"
 
+# Check if snap is installed (required for Amass)
+if ! command -v snap &> /dev/null
+then
+    echo "snap is not installed. Installing snap..."
+    sudo apt-get install snapd
+else
+    echo "snap is already installed."
+fi
+
+# Checks to see if Python3 is installed for SQLmap
+if ! command -v python3 &> /dev/null
+then
+    echo "Python3 is not installed. Installing Python3..."
+    sudo apt-get install python3
+else
+    echo "Python3 is already installed."
+fi
+
 # Installs the tools mentioned in README.md
-echo "Installing Nuclei..."
+echo "Installing all the tools now..."
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 nuclei
-echo "Nuclei installed, installing httpx..."
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-echo "httpx installed, installing Subfinder..."
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-echo "Subfinder installed, installing DNSx..."
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-echo "DNSx installed, installing Naabu..."
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
-echo "Naabu installed, installing Nmap"
 sudo apt-get install nmap -y
-echo "Nmap installed, installing Katana..."
+sudo snap install amass
+sudo apt install wfuzz -y
+cd ~ && git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 go install github.com/projectdiscovery/katana/cmd/katana@latest
-echo "Katana installed, installing Recox..."
 git clone https://github.com/samhaxr/recox
 cd recox
 chmod +x recox.sh
