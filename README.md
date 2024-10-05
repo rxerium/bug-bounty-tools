@@ -34,3 +34,7 @@ Once you have both API keys add them to the `/usr/local/bin/recox/recox.sh` file
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="25" height="25" /> Contributions
 
 While I'm sure there are many other tools that are used for Bug Bounties this is just a baseline set, feel free to create pull requests and contribute 😃
+
+# Contact
+
+If you have any questions feel free to reach out to me on [Signal](https://signal.me/#eu/0Qd68U1ivXNdWCF4hf70UYFo7tB0w-GQqFpYcyV6-yr4exn2SclB6bFeP7wTAxQw) or via email: rishi@rxerium.com.
