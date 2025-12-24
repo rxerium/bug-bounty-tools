@@ -1,6 +1,16 @@
 #!/bin/bash
 
-# See README.md on the tools that are used and how to setup and run the script on your system.
+# See README.md on the to# Installs the tools mentioned in README.md
+echo "Installing all the tools now..."
+
+# Install pdtm (ProjectDiscovery Tool Manager) and use it to install all ProjectDiscovery tools
+echo "Installing pdtm (ProjectDiscovery Tool Manager)..."
+go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+echo "Installing all ProjectDiscovery tools using pdtm..."
+pdtm -ia
+nuclei
+
+sudo apt-get install nmap -yare used and how to setup and run the script on your system.
 # I will try and make as many comments as possible so it is easy to understand the commands that are being ran
 
 
@@ -37,13 +47,6 @@ else
 fi
 
 # Installs the tools mentioned in README.md
-echo "Installing all the tools now..."
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
-nuclei
-go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 sudo apt-get install nmap -y
 sudo snap install amass
 sudo apt install wfuzz -y
