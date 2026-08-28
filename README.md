@@ -4,6 +4,7 @@ A BASH Script to automate the installation of the most popular bug bounty tools,
 
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="Hammer and Wrench" width="25" height="25" /> Tools Used
 
+- [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPLv3) autonomous AI penetration testing platform: 50+ offensive tools across web, cloud, AD and Kubernetes, self-hosted, the model never receives your real IPs or credentials.
 - [Nuclei](https://github.com/projectdiscovery/nuclei)
 - [httpx](https://github.com/projectdiscovery/httpx)
 - [Naabu](https://github.com/projectdiscovery/naabu)
